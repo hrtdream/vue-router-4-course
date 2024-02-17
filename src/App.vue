@@ -8,7 +8,7 @@ const route = useRoute()
 <template>
   <TheNavigation />
   <div class="container">
-    <router-view v-slot="{Component}">
+    <router-view v-slot="{ Component }">
       <transition name="fade" mode="out-in">
         <component :is="Component" :key="route.path"></component>
       </transition>

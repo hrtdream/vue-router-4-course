@@ -28,7 +28,7 @@ const destination = computed(() => sourceData.destinations.find(dest => dest.id 
       <h2>Top Experiences in {{ destination.name }}</h2>
       <div class="cards">
         <router-link v-for="experience in destination.experiences" :key="experience.slug"
-                     :to="{name: 'experience.show', params: {experienceSlug: experience.slug}}">
+          :to="{ name: 'experience.show', params: { experienceSlug: experience.slug } }">
           <ExperienceCard :experience="experience" />
         </router-link>
       </div>
@@ -37,6 +37,4 @@ const destination = computed(() => sourceData.destinations.find(dest => dest.id 
   </div>
 </template>
 
-<style scoped>
-
-</style>
+<style scoped></style>

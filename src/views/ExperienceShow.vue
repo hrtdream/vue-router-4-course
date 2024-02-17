@@ -25,6 +25,4 @@ const experience = computed(() => destination.value.experiences.find(exp => exp.
   </section>
 </template>
 
-<style scoped>
-
-</style>
+<style scoped></style>
